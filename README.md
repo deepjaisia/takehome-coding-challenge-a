@@ -1,66 +1,29 @@
-# Take-Home Coding Challenge for Front End Developer
+# Install and run application
+1. Git clone the application from the repository
+2. Run `npm install` in terminal/windows powershell
+3. After installation run `npm run start` in terminal/windows powershell
 
-Thanks for taking the time to work on this take-home coding challenge.
+# Link to live website
+https://ey-take-home-app.herokuapp.com/
 
-## Timing
+# About App
+I am proud of my project as a whole, but one thing I am especially proud of is the creating a 'Database' module that was responsible for all the functionalities in the application. Some of the main things that the module can do is:
 
-Please complete and submit your work within 3 days.
+1. Add a new target
+2. Delete target
+3. Updating existing targets
+4. Fetching targets
+5. Getting targets statuses
+6. It has save and load functionalities which performs all of that on local storage. They work better with json like format(objects, arrays) and not with Javascript objects like Map in this case.
 
-## Business Problem
+The reason why I'm really proud of this part is because it holds all the data for the application and keeps the application in sync at all times with the front-end of application. And since it is a javascript file there are usually not any async calls for adding new targets or editing them.
 
-A company is looking to achieve inorganic growth through acquisitions. They have asked us to develop an online tool to track and analyze potential target companies.
+I'm also proud of the charting features, it doesn't get in the way by not doing a lot in the table. The view status chart updates as you add a new target, delete a target.
 
-## Requirements:
-
-Your finish product should be client ready.
-
-You can be as creative as you want but at the bare minimum your prototype should allow the client to perform the following activities:
-
-- View a list of targets
-- Edit an exising target
-- Create a new target
-- Delete a target
-
-## Assumptions
-
-- Please use either Angular (Preferred) or React
-- Feel free to use any CSS framework or 3rd party JS library to extend your app
-- Focus on making the application configurable and add any charts/analytics you like
-- Demonstrate use of web standards and best practices.
-- Make the navbar responsive with at least one breakpoint (your choice as to how it looks on a smaller screen width).
-- Data does not need to be persisted (please generate and use your own mock data)
-- Examples of data to be captured:
-  - Status (e.g. researching, pending approval, approved, declined)
-  - Company Info
-  - Key Contacts
-  - Financial Performance
-
-## Bonuses (only if you have time)
-
-- Use SASS or LESS to pre-compile your CSS.
-- Add a CSS animation with transitions.
-- Add unit tests
-- Using EY Color Palette:
-  - #333333
-  - #ffe600
-  - #ffffff
-  - #cccccc
-  - #999999
-
-## Documentation:
-
-Please modify README.md to add:
-
-1. instructions on how to build/run your application
-2. link to the live site
-3. A paragraph or two about what you are particularly proud of in your implementation, and why.
-
-## Submission Guidelines
-
-1. Fork this project on github. You will need to create an account if you don't already have one.
-2. Complete the project as described below within your fork.
-3. Push all of your changes to your fork on github and submit a pull request.
-4. Publish your application to a live site.
-5. You should email your recruiter to let them know you had submitted a solution. Make sure to include your github username in your email (so we can match applicants with pull requests).
-
-Thank you and good luck!
+Other features:
+-> When the add target box pops up, there are fields to enter all of your data, including a drop down list for current status. 
+-> Upon saving, your new target is added with the option to edit or delete it. When the edit option is selected, the initial add target box appears again, but with all of the fields filled with the data from the target you selected.
+-> When you click outside of the add target area and the pop up box closes, it neither deletes your target nor adds a new one, but the table stays exactly the same. 
+-> I am very proud of this function as I think it executes each action seamlessly and it is something I would be proud to present to a client.
+-> When the table is open, the action buttons at the top of the page updates accordingly to whether the table is open or closed
+-> the charts in the table showing financial performance update as you update the information in the add/edit target box
