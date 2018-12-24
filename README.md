@@ -1,68 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I am proud of my project as a whole, but one thing I am especially proud of is the creating a 'Database' module that was responsible for all the functionalities in the application. Some of the main things that the module can do is:
 
-## Available Scripts
+1. Add a new target
+2. Delete target
+3. Updating existing targets
+4. Fetching targets
+5. Getting targets statuses
+6. It has save and load functionalities which performs all of that on local storage. They work better with json like format(objects, arrays) and not with Javascript objects like Map in this case.
 
-In the project directory, you can run:
+The reason why I'm really proud of this part is because it holds all the data for the application and keeps the application in sync at all times with the front-end of application. And since it is a javascript file there are usually not any async calls for adding new targets or editing them.
 
-### `npm start`
+I'm also proud of the charting features, it doesn't get in the way by not doing a lot in the table. The view status chart updates as you add a new target, delete a target.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Other features:
+-> When the add target box pops up, there are fields to enter all of your data, including a drop down list for current status. 
+-> Upon saving, your new target is added with the option to edit or delete it. When the edit option is selected, the initial add target box appears again, but with all of the fields filled with the data from the target you selected.
+-> When you click outside of the add target area and the pop up box closes, it neither deletes your target nor adds a new one, but the table stays exactly the same. 
+-> I am very proud of this function as I think it executes each action seamlessly and it is something I would be proud to present to a client.
+-> When the table is open, the action buttons at the top of the page updates accordingly to whether the table is open or closed
+-> the charts in the table showing financial performance update as you update the information in the add/edit target box
