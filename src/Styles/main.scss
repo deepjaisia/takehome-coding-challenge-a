@@ -1,0 +1,118 @@
+@import 'reset.scss';
+@import 'variables.scss';
+
+.bg--accent {
+  background: $accent;
+}
+
+.bg--accent-grey-dark {
+  background: $accent--grey-dark;
+}
+
+.bg--accent-grey-medium {
+  background: $accent--grey-medium;
+}
+
+.bg--accent-grey-light {
+  background: $accent--grey-light;
+}
+
+.text--accent {
+  color: $accent;
+}
+
+.text--accent-grey-dark {
+  color: $accent--grey-dark;
+}
+
+.text--accent-grey-medium {
+  color: $accent--grey-medium;
+}
+
+.text--accent-grey-light {
+  color: $accent--grey-light;
+}
+
+.text--thin {
+  font-weight: 300;
+  // color: #00c986;
+}
+
+.btn-round {
+  border-radius: 0.2rem;
+}
+
+.btn--animate-accent {
+  transition: all $transition--fast ease;
+  background: $accent--grey-dark;
+  color: $accent;
+  box-sizing: border-box;
+  width: 100%;
+  &:hover{
+    transition: all $transition--fast ease;
+    background: $accent;
+    color: $accent--grey-dark;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px $accent--grey-dark;
+  }
+}
+
+.btn-hover {
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  &:hover{
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+    transform: scale(1.07);
+    border: 2px solid $accent--grey-dark;
+  }
+}
+
+.btn-edit {
+  background: rgb(26, 146, 216);
+  transition: all 0.25s ease;
+  // border: 2px solid rgb(26, 146, 216);
+}
+
+.btn-delete {
+  background: rgb(255, 47, 47);
+  transition: all 0.25s ease;
+  // border: 2px solid rgb(255, 47, 47);
+}
+
+.table--tracker {
+  transition: display $transition--fast ease;
+  animation: roll-up $transition--fast cubic-bezier(0, 1, 1, 1);
+}
+
+.table--tracker {
+  border: none;
+  box-shadow: 3px 3px 10px 2px $accent--grey-medium;
+  font-size: 50%;
+  i {
+    font-size: 50%;
+  }
+}
+
+@media(min-width: 768px) {
+  .table--tracker {
+    font-size: 70%;
+    i {
+      font-size: 70%;
+    }
+  }    
+}
+
+@media(min-width: 1200px) {
+  .table--tracker {
+    font-size: 100%;
+    i {
+      font-size: 100%;
+    }
+  }    
+}
+
+@keyframes roll-up {
+  from { opacity: 0; transform: translateY(calc(100% - 90%)) }
+  to { opacity: 1; transform: translateY(0) }
+}
