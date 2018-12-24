@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Install and run application
 1. Git clone the application from the repository
 2. Run `npm install` in terminal/windows powershell
@@ -8,8 +7,6 @@
 https://ey-take-home-app.herokuapp.com/
 
 # About App
-=======
->>>>>>> Updated README
 I am proud of my project as a whole, but one thing I am especially proud of is the creating a 'Database' module that was responsible for all the functionalities in the application. Some of the main things that the module can do is:
 
 1. Add a new target
